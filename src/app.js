@@ -38,7 +38,7 @@ let iconElement = document.querySelector("#icon");
 
 temperatureElement.innerHTML = Math.round (response.data.main.temp);
 cityElement.innerHTML = response.data.name;
-descriptionElement.innerHTML = 
+descriptionElement.innerHTML = response.data.weather[0].description;
 humidityElement.innerHTML = response.data.main.humidity;
 windElement.innerHTML = Math.round (response.data.wind.speed);
 dateElement.innerHTML = formatDate(response.data.dt * 1000);
@@ -49,7 +49,23 @@ iconElement.setAttribute(
 iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
+function search(city) {
 let apiKey = "187ee23d0b9957fa5f612328e679b48c";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=New York&appid=${apiKey}&units=metric`;
-
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;    
 axios.get(apiUrl).then(displayTemperature);
+}
+
+function handleSubmit(event) {
+    event.preventDefault();
+    let cityInputElement = document.querySelector("city-input");
+    search(cityInputElement.value);
+
+}
+search("New York");
+
+
+
+
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
