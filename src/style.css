@@ -52,3 +52,21 @@ li:first-letter {
     max-width: 600px;
         margin: 30px auto;
 }
+
+.weather-forecast {
+    margin-top: 20px;
+    text-align: center;
+
+}
+.weather-forecast-date {
+    font-size: 16px;
+    color:rgba(245, 245, 220, 0.959);
+    opacity: 0.5;
+}
+
+.weather-forecast-temperature-min {
+    opacity: 0.5;
+}
+.weather-forecast-temperature {
+    font-size: 16px;
+}
