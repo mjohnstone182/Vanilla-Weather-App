@@ -14,6 +14,7 @@
 </head>
 <body>
 <div class="container">
+    <div class="app-wrapper">
     <div class="weather-app-wrapper">
     <div class="weather-app">
         <form id="search-form" class="mb-3">
@@ -31,15 +32,12 @@
         <input 
         type="submit" 
         value="Search"
-        class="btn btn-primary w-100" />
+        class="btn btn-info w-100" />
     </div>
     </div>
     </form>
     <div class="overview">
-    <h1 id="city"></h1>
-    <ul>
-        <li> Last Updated at <span id="date"></li>
-            
+    <h1 id="city"></h1>   
         </li>
         <li id="description">
             
@@ -47,36 +45,44 @@
     </ul>
 </div>
     <div class="row">
-        <div class="col">
-            <img
-            src="" alt="Clear" id="icon" width="60px"
+        <div class="col-6">
+            <div class="clearfix weather-temperature">
+            <div class="float-left"> 
+            <strong id="temperature">12 </strong><span class="units">
+            <a href="#" id="celsius-link" class="active"> °C </a> | 
+            <a href="#" id="fahrenheit-link">°F</a></span>
+        <img
+            src="" alt="Clear" id="icon" width="100px"
             />
-            <div class="float-left">
-            <strong id="temperature">12 </strong><span class="units"> °C | <a href="#">°F</a>  </span>
         </div>
-    </div>
-        <div class="col">
+</div>
+</div>
+        <div class="col-6">
             <ul>
-                <li>
-                    
+                <li> 
                 </li>
                 <li>
-                    Humidity: <span id="humidity"></span>%
+                Humidity: <span id="humidity"></span>%
                 </li>
                 <li>
                 Wind: <span id="wind"></span> km/h
             </li>
             </ul>
         </div>
+      <ul>
+     <li> Last Updated at <span id="date"></li>    
     </div>  
  </div>
  </div>
-<small>
+ <small>
     <a href="https://github.com/mjohnstone182/Vanilla-Weather-App.git" class="source-code"
           target="blank"
           >Open-Source Code</a>
     by Melanie Johnstone
-</small> 
+</small>
+</div>
+</div>
+</div>
 </div>
 </div>
     <script src="src/app.js"></script>

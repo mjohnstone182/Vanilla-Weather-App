@@ -11,34 +11,44 @@ li {
     font-size: 20px;
 
 }
+
+
 li:first-letter {
     text-transform: capitalize;
 }
 .weather-app {
-     background: linear-gradient(
-    109.6deg,
-    rgb(2, 119, 165) 11.2%,
-    rgb(102, 51, 153) 91.1%);
-    max-width: 600px;
-    margin: 30px auto;
+   background: linear-gradient(70.6deg, rgb(0, 32, 36) 0.3%, rgb(0, 47, 255) 55.8%, rgb(10, 160, 247) 105.1%);
+
     padding: 20px;
     border: 1px solid grey;
     border-radius: 5px;
     font-family: 'Jost', sans-serif;
     color: rgba(245, 245, 220, 0.959);
 }
-.weather-app-wrapper {
-    max-width: 600px;
-    margin: 30px auto;
-}
 
 .overview {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 .float-left {
-    font-size: 20px;
-    margin-top: 8px;
+    font-size: 35px;
+
 }
-.units {
-    font-size: 15;
+.weather-temperature .units {
+    font-size: 25px;
+
+}
+
+.weather-temperature .active {
+    color: rgba(245, 245, 220, 0.959);
+    cursor: default;
+
+}
+
+.weather-temperature .active:hover {
+    text-decoration: none;
+}
+
+.app-wrapper {
+    max-width: 600px;
+        margin: 30px auto;
 }
