@@ -49,10 +49,6 @@ background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 43%, rgba
     text-decoration: none;
 }
 
-.app-wrapper {
-    max-width: 800px;
-        margin: 30px auto;
-}
 
 .weather-forecast {
     margin-top: 20px;
@@ -70,4 +66,8 @@ background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 43%, rgba
 }
 .weather-forecast-temperature {
     font-size: 16px;
+}
+.app-wrapper {
+    max-width: 600px;
+        margin: 30px auto;
 }
