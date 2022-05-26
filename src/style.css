@@ -17,7 +17,8 @@ li:first-letter {
     text-transform: capitalize;
 }
 .weather-app {
-   background: linear-gradient(70.6deg, rgb(0, 32, 36) 0.3%, rgb(0, 47, 255) 55.8%, rgb(93, 10, 247) 105.1%);
+   background: rgb(2,0,36);
+background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 43%, rgba(0,146,255,1) 86%);
 
     padding: 20px;
     border: 1px solid grey;
